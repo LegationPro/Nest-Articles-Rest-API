@@ -2,11 +2,11 @@ version: '3.8'
 services:
 
   postgres:
-    image: postgres:13.5
+    image: postgres:13.5 # U CAN USE LATEST
     restart: always
     environment:
-      - POSTGRES_USER=anze
-      - POSTGRES_PASSWORD=fatballs123
+      - POSTGRES_USER=USER
+      - POSTGRES_PASSWORD=PASSWORD
     volumes:
       - postgres:/var/lib/postgresql/data
     ports:
